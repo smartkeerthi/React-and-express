@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.AppBody {
+  width: 90%;
+  height: 90%;
+  border: 3px solid rgb(133, 133, 133);
+  display: flex;
+}
