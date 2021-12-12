@@ -9,18 +9,38 @@
     "start": "cross-env NODE_ENV=production node server.js",
     "server": "cross-env NODE_ENV=development nodemon server.js",
     "client": "npm start --prefix client",
+    "producer": "node ./routes/producer.js",
+    "consumer": "node ./routes/consumer.js",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "oppila",
   "license": "MIT",
   "dependencies": {
+    "avsc": "^5.7.0",
     "concurrently": "^6.0.2",
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "kafka-js": "*",
+    "kafka-node": "^5.0.0",
+    "kafkajs": "^1.15.0",
+    "node-fetch": "^2.6.1",
+    "node-rdkafka": "^2.10.1",
+    "request": "^2.88.2",
+    "socket.io": "^4.1.2",
+    "system-commands": "^1.1.7"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartkeerthi/React-and-express.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/smartkeerthi/React-and-express/issues"
+  },
+  "homepage": "https://github.com/smartkeerthi/React-and-express#readme"
 }

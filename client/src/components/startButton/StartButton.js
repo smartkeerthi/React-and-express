@@ -7,10 +7,10 @@ import axios from '../../axios'
 function startButton() {
 
     const handleStart = () => {
-        axios.get('/api/start')
+        axios.get('/api/start')     // http://localhost:5000/api/start/
             .then(res => {
-                const data = res.data;
-                alert(data);
+                console.log(res.data)
+                // alert(data);
             })
             .catch(err => console.log(err))
     }

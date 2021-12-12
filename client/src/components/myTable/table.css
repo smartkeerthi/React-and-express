@@ -1,0 +1,24 @@
+table {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* flex: 0.5; */
+  font-size: large;
+  color: white;
+  margin: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #474747;
+}

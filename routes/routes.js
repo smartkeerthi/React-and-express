@@ -3,13 +3,15 @@ import express from 'express'
 const Router = express.Router()
 
 Router.get('/start', (req, res) => {
-    console.log('Start button clicked')
-    res.json('Server started')
+    res.json("Start Clicked (Content From Server)")
 })
 
 Router.get('/configuration', (req, res) => {
-    console.log('Config button clicked')
-    res.json('Configuration Clicked')
+    res.json('Configuration Clicked (Content From Server)')
+})
+
+Router.get('/data', (req, res) => {
+    const data = getData(res)
 })
 
 export default Router

@@ -1,15 +1,17 @@
 import { Settings } from '@material-ui/icons'
-import React from 'react'
+import {React, useState} from 'react'
 import { Button } from 'reactstrap'
 import './configButton.css'
 import axios from '../../axios'
 
-function configButton() {
+function ConfigButton() {
+    // const [status, setStatus] = useState('')
 
     const handleConfig = () => {
         axios.get('/api/configuration')
             .then(res => {
-                alert(res.data);
+                // setStatus(res.data);
+                console.log(res.data)
             })
             .catch(err => console.log(err))
     }
@@ -18,10 +20,10 @@ function configButton() {
         <div className="configButton">
             <Button size="lg" onClick={handleConfig}>
                 <Settings/>
-                CONFIG
+                PRODUCE
             </Button>
         </div>
     )
 }
 
-export default configButton
+export default ConfigButton
